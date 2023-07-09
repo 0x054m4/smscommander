@@ -147,9 +147,9 @@ def send(message, url, ggoption, ggtype, platformName):
                print("FAILED => "+str(number)+" | ERROR=> "+error)
                failed_numbers.append(number)
       print('''
-            Total numbers: '''+i+'''
-            Failed: '''+len(failed_numbers)+'''
-            Succeeded: '''+i-len(failed_numbers)+'''
+            Total numbers: '''+str(i+1)+'''
+            Failed: '''+str(len(failed_numbers))+'''
+            Succeeded: '''+str(i-len(failed_numbers))+'''
             All failed numbers has been saved in a file in smscommander/fails folder for your safety.
             ''')
       if failed_numbers:
